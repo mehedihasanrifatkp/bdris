@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Full Site Area -->
+        <section>
+            <div class="row d-flex d-flex-row">
+                <!-- Left site Area -->
+                <div class="col-lg-2 p-0  left-side">
+                    <div class="left-top-area text-center p-4">
+                        <a href="#">
+                            <img src=" images/user.jpg" alt="">
+                        </a>
+                        <h4>Mehedi Hasan</h4>
+                    </div>
+                    <div class="left-bottom-area mt-4">
+
+                        <i id="showIcon" onclick="showMenu()" class="fa fa-solid fa-bars"></i>
+                        <i id="hideIcon" class="fa fa-times" onclick="hideMenu()"></i>
+
+                        <div id="menuLicks" class="nav flex-column nav-pills w-full navbar-links" id="v-pills-tab">
+
+                            <button onclick="hideMenu()" class="nav-link active" id="v-pills-home-tab"
+                                data-bs-toggle="pill" data-bs-target="#deshboard" type="button">
+                                <i class="fa-solid fa-box me-3"></i>
+                                <span>ড্যাশবোর্ড</span>
+                            </button>
+                            <button onclick="hideMenu()" class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#apply" type="button">
+                                <i class="fa-regular fa-pen-to-square me-3"></i>
+                                <span>আবেদন</span>
+                            </button>
+
+                            <button onclick="hideMenu()" class="nav-link" id="v-pills-settings-tab"
+                                data-bs-toggle="pill" data-bs-target="#report" type="button">
+                                <i class="fa-regular fa-clipboard me-3"></i>
+                                <span>প্রতিবেদন</span>
+                            </button>
+                            <button onclick="hideMenu()" class="nav-link" id="v-pills-settings-tab"
+                                data-bs-toggle="pill" data-bs-target="#profile" type="button">
+                                <i class="fa-solid fa-circle-user me-3"></i>
+                                <span>প্রোফাইল</span>
+                            </button>
+                            <button onclick="hideMenu()" class="nav-link" id="v-pills-settings-tab"
+                                data-bs-toggle="pill" data-bs-target="#village" type="button">
+                                <i class="fa-solid fa-bars-staggered me-2"></i>
+                                <span>যোগকৃত গ্রাম</span>
+                            </button>
+                            <button onclick="hideMenu()" class="nav-link" id="v-pills-settings-tab"
+                                data-bs-toggle="pill" data-bs-target="#recharge" type="button">
+                                <i class="fa-solid fa-receipt me-2"></i>
+                                <span>রিচার্জ সমূহ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End LeftSite Area -->
+                <!-- RightSite Area -->
+
+                <div class="col-lg-10 p-0 right-sidebar">
+                    <div style="background: #144b00;" class="right-top d-flex justify-content-between py-2 px-3">
+                        <h5 style="color: #fff;"><b>সহজ ও দ্রুত জন্ম সনদ আবেদন</b></h5>
+                        <span style="color: #ff0000; cursor: pointer;"><a href="">লগ আউট</a></span>
+                    </div>
+                    <div class="tab-content py-4" id="v-pills-tabContent">
+
+                        <!-- Deshboard content -->
+                        <div class="tab-pane fade show active" id="deshboard">
+                            <!-- deshboard title are  -->
+                            <div class="title-bar">
+                                <h5>
+                                    <i class="fa-solid fa-box me-3"></i>
+                                    <span>ড্যাশবোর্ড</span>
+                                </h5>
+                            </div>
+
+                            <div class="row justify-content-center mt-4 gap-5 paddingLeft">
+                                <!-- deshboard content area -->
+                                <div style="background-color: #ddf5ff59;" class="col-lg-7 px-3 py-3 shadow rounded ">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="">
+                                            <h5 style="width: 130px;" class="text-start fs-6 fw-norlam">
+                                                <span>অভিনন্দন!</span><br>
+                                                <span style="color: #0a00a4;" class="fw-bolder fs-5">মেহেদী
+                                                    হাসান</span><br>
+                                                <span>+0</span>
+                                            </h5>
+                                        </div>
+                                        <div class="">
+                                            <h5 class="text-end fs-5 fw-norlam">
+                                                <span class="fs-md">আপনার ব্যালেন্স</span><br>
+                                                <span class="fw-bolder fs-3">০০</span>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="row gap-2 mt-3">
+                                        <div class="col-lg-12 text-center">
+                                            <img style="width: 130px ;height:130px; border-radius: 0px 50px 0px 50px; border: 2px dotted;"
+                                                src="images/user.jpg " alt="">
+                                        </div>
+                                        <div class="col-lg-12  mb-3 text-center">
+                                            <h4 style="font-size: 19px;
+                                            font-weight: 600;
+                                            line-height: 22px;">কুতুবপুর ইউনিয়ন পরিষদ</h4>
+                                            <h6>বেগমগঞ্জ, নোয়াখালী</h6>
+                                        </div>
+                                        <hr style="border-bottom: 3px solid; margin-left: 10px;">
+                                    </div>
+
+                                </div>
+                                <!-- deshboard recherge form area -->
+                                <div style="background-color: #ddf5ff59;" class="col-lg-4 p-3 shadow rounded">
+                                    <h3 class="p-2 border-bottom text-center">রিচার্জ করুন</h3>
+                                    <form class="row g-3 py-3">
+                                        <!-- <div class="">
+                                            <label for="staticEmail2" class="">নাম (ইংরেজি)</label>
+                                            <input placeholder="ইংরেজিতে আপনার নাম লিখুন" type="text" readonly
+                                                class="form-control w-full d-block" id="staticEmail2"
+                                                value="MEHEDI HASAN" required>
+                                        </div>
+                                        <div class="">
+                                            <label class="">ইমেইল</label>
+                                            <input type="email" class="form-control" id="inputPassword2"
+                                                placeholder="আপনার ইমেইল লিখুন" value="ofmehedi17@gmail.com" required>
+                                        </div>
+                                        <div class="col-auto">
+                                            <label class="">রিচার্জের পরিমান লিখুন</label>
+                                            <input type="number" class="form-control" id="inputPassword2"
+                                                placeholder="টাকার পরিমান লিখুন" required>
+                                        </div> -->
+                                        <div class="text-center mx-auto">
+                                            <button type="submit" class="btn btn-primary mb-3">ডিপোজিট </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--deshboard Apply button area -->
+                            <div class="paddingLeft d-flex justify-content-center deshboard-btn mt-5 w-full">
+                                <div class="w-50 Tc Tl">
+                                    <button style="background-color: #ddf5ff59;color: red;"
+                                        class="btn fw-bolder py-3 px-3 shadow-lg">নতুন আবেদন</button>
+                                </div>
+                                <div class="w-50">
+                                    <button style="background-color: #ddf5ff59;color:red;"
+                                        class="btn fw-bolder py-3 px-4 shadow-lg w-full">সংশোধন আবেদন</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- DEshboard content End-->
+
+                        <!-- Apply content-->
+                        <div class=" tab-pane fade" id="apply">
+                            <!-- appyl title area  -->
+                            <div class="title-bar">
+                                <h5>
+                                    <i class="fa-regular fa-clipboard me-3"></i>
+                                    <span>আবেদন</span>
+                                </h5>
+                            </div>
+                            <!-- apply content area  -->
+                            <div class="paddingLeft">
+                                <div class="w-full mt-3 mx-auto">
+                                    <div class="row">
+                                        <div class="col-md-7 position-relative">
+
+                                            <button id="new-apply-btn" style="color: red;" class="btn fw-bolder">নতুন
+                                                আবেদন</button>
+
+                                            <div id="new-apply-form" class="">
+                                                <h6 class="fw-bolder mt-4">জন্ম নিবন্ধন আবেদন</h6>
+                                                <form class=" mt-2 form-grid">
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="">জন্ম তারিখ<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="দিন-মাস-বছর" type="text"
+                                                            class="form-control mb-2 " required>
+                                                    </div>
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="">সন্তানের ক্রম<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="সন্তানের ক্রম দিন" type="text"
+                                                            class="form-control mb-2" required>
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="staticEmail2" class="">নাম (বাংলায়)<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="নাম বাংলায় লিখুন" type="text"
+                                                            class="form-control mb-2" required>
+                                                    </div>
+
+                                                    <div class="">
+                                                        <label for="staticEmail2" class="">নাম (ইংরেজি)<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="নাম ইংরেজি লিখুন" type="text"
+                                                            class="form-control mb-2" required>
+                                                    </div>
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="">পিতার নাম (বাংলায়)<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="পিতার নাম বাংলায় লিখুন" type="text"
+                                                            class="form-control mb-2" required>
+                                                    </div>
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="">পিতার নাম (ইংরেজি)<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="পিতার নাম ইংরেজি লিখুন" type="text"
+                                                            class="form-control mb-2" required>
+                                                    </div>
+
+
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="">মাতার নাম (বাংলায়)<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="মাতার নাম বাংলায় লিখুন" type="text"
+                                                            class="form-control mb-2" required>
+                                                    </div>
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="">মাতার নাম (ইংরেজি)<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="মাতার নাম ইংরেজি লিখুন" type="text"
+                                                            class="form-control mb-2 " required>
+
+                                                    </div>
+
+                                                    
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="">বাড়ীর নাম (বাংলায়)<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="বাড়ীর নাম বাংলায় লিখুন" type="text"
+                                                            class="form-control mb-2" required>
+                                                    </div>
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="">বাড়ীর নাম (ইংরেজি)<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="বাড়ীর নাম ইংরেজি লিখুন" type="text"
+                                                            class="form-control mb-2" required>
+                                                    </div>
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="">ওয়ার্ড নং<span
+                                                                style="color: red;">*</span></label>
+                                                        <select style="border: 2px solid #0c3899;"
+                                                            class="form-select mb-2"
+                                                            aria-label="Default select example">
+                                                            <option class="fw-bolder" selected>ওয়ার্ড</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="3">4</option>
+                                                            <option value="3">5</option>
+                                                            <option value="3">6</option>
+                                                            <option value="3">7</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="input-group"><div class="custom-file"><input type="file" name="image" id="image" class="custom-file-input"> <label for="image" class="custom-file-label">
+                                                       <b>আপলোড</b></label></div></div>
+                                                    <!-- <div>
+                                                        <input class="form-control mt-4" type="submit" value="আপলোড">
+                                                    </div> -->
+                                                    <button style="background: #0044a4;color: #ffffff;"
+                                                        class="btn me-3 mt-4">সাবমিট</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+
+                                            <button id="old-apply-btn" style="color: red;" class="btn fw-bolder">সংশোধন
+                                                আবেদন</button>
+
+                                            <div id="replec-apply">
+                                                <h6 class="fw-bolder mt-4">জন্ম নিবন্ধন সংশোধন আবেদন</h6>
+                                                <form class="form-grid mt-3">
+
+                                                    <div>
+                                                        <label for="staticEmail2" class="mb-1">জন্ম নিবন্ধন নম্বর <span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="জন্ম নিবন্ধন নম্বর লিখুন" type="text"
+                                                            class="form-control mb-3" required>
+                                                    </div>
+                                                    <div>
+                                                        <label for="staticEmail2" class="mb-1">জন্ম তারিখ<span
+                                                                style="color: red;">*</span></label>
+                                                        <input style="border: 2px solid #0c3899;"
+                                                            placeholder="দিন-মাস-বছর" type="text"
+                                                            class="form-control mb-3 " required>
+                                                    </div>
+                                                    <button style="background: #0044a4;color: #fff;"
+                                                        class="btn">অনুসন্ধান</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Apply content End -->
+
+                        <!-- Report content -->
+                        <div class=" tab-pane fade" id="report">
+                            <!-- Report title area  -->
+                            <div class="title-bar">
+                                <h5>
+                                    <i class="fa-regular fa-clipboard me-3"></i>
+                                    <span>প্রতিবেদন</span>
+                                </h5>
+                            </div>
+                            <!-- Report content area  -->
+                            <div class="paddingLeft20">
+                                <div class="mt-4 shadow-sm">
+                                    <table class="table  table-striped">
+                                        <thead style="font-size: 14px;" class="thead py-3">
+                                            <tr class="">
+                                                <th>স্ক্রল নং</th>
+                                                <th>তারিখ</th>
+                                                <th>সর্বমোট আবেদন</th>
+                                                <th>বিস্তারিত</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>2022-12-28</td>
+                                                <td>3</td>
+                                                <td>
+                                                    <a style="color: #0044a4; font-size: 15px; font-weight: bold;"
+                                                        href="#">বিস্তারিত</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>2</th>
+                                                <td>2023-01-04</td>
+                                                <td>2</td>
+                                                <td>
+                                                    <a style="color: #0044a4; font-size: 15px; font-weight: bold;"
+                                                        href="#">বিস্তারিত</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Report content End -->
+                        <!-- Profile content -->
+                        <div class=" tab-pane fade" id="profile">
+                            <!-- Profile title area  -->
+                            <div class="title-bar">
+                                <h5>
+                                    <i class="fa-solid fa-circle-user me-3"></i>
+                                    <span>প্রোফাইল</span>
+                                </h5>
+                            </div>
+
+                            <!-- Profile content area  -->
+                            <div class="paddingLeft20">
+                                <div style="background: #effcff;"
+                                    class="profile-content d-flex justify-content-between gap-5 mt-3">
+                                    <div class=" align-items-center shadow ">
+                                        <div class=" d-flex justify-content-center ">
+                                            <img class="img" src="images/user.jpg" alt="">
+                                        </div>
+                                        <div class="padding-none d-flex justify-content-between mt-4 px-5 p-0">
+                                            <ul class="p-0 me-2">
+                                                <li class="list-group-item mb-3">
+                                                    <b>নাম :</b><br>
+                                                    <span>মেহেদী হাসান</span>
+                                                </li>
+                                                <li class="list-group-item mb-3">
+                                                    <b>পরিষদ :</b><br>
+                                                    <span>কুতুবপুর ইউনিয়ন পরিষদ</span>
+                                                </li>
+                                                <li class="list-group-item mb-3">
+                                                    <b>মোবাইল :</b><br>
+                                                    <span>01739695790</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="p-0">
+                                                <li class="list-group-item mb-3">
+                                                    <b>নাম (ইংরেজি):</b><br>
+                                                    <span>MEHEDI HASAN</span>
+                                                </li>
+                                                <li class="list-group-item mb-3">
+                                                    <b>ইমেইল:</b><br>
+                                                    <span>ofmehedi17@gmail.com</span>
+                                                </li>
+                                                <li class="list-group-item mb-3">
+                                                    <b>ওটিপি ইমেইল:</b><br>
+                                                    <span>ofmehedi17@gmail.com</span>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <button style="background: #0044a4;color: #fff;"
+                                                        class="btn">Edit</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="village shadow p-4 w-50">
+                                        <h2 style="font-size: 20px; color: #070069; font-weight: bold;">গ্রাম যোগ করুন
+                                        </h2>
+                                        <form action="" class="form-grid mt-4">
+                                            <div class="">
+
+                                                <label for="staticEmail2" class="">গ্রামের নাম (বাংলায়)<span
+                                                        style="color: red;">*</span></label>
+                                                <input style="border: 2px solid #0c3899;"
+                                                    placeholder="গ্রামের নাম বাংলায় লিখুন" type="text"
+                                                    class="form-control mb-3" required>
+                                            </div>
+
+                                            <div class="">
+                                                <label for="staticEmail2" class="">
+                                                    গ্রামের নাম (ইংরেজি)
+                                                    <span style="color: red;">*</span></label>
+                                                <input style="border: 2px solid #0c3899;"
+                                                    placeholder="গ্রামের নাম ইংরেজিতে লিখুন" type="text"
+                                                    class="form-control mb-3" required>
+                                            </div>
+
+                                            <div>
+                                                <label for="staticEmail2" class="">ডাকঘরের নাম (বাংলায়)<span
+                                                        style="color: red;">*</span>
+                                                </label>
+                                                <input style="border: 2px solid #0c3899;"
+                                                    placeholder="ডাকঘরের নাম বাংলায় লিখুন" type="text"
+                                                    class="form-control mb-3" required>
+                                            </div>
+
+
+                                            <div>
+                                                <label for="staticEmail2">ডাকঘরের নাম (ইংরেজি)<span
+                                                        style="color: red;">*</span></label>
+                                                <input style="border: 2px solid #0c3899;"
+                                                    placeholder="ডাকঘরের নাম ইংরেজিতে লিখুন" type="text"
+                                                    class="form-control mb-3" required>
+                                            </div>
+
+                                            <div>
+                                                <label for="staticEmail2" class="">ওয়ার্ড নির্বাচন করুন<span
+                                                        style="color: red;">*</span>
+                                                </label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option class="fw-bolder" selected>ওয়ার্ড</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                    <option value="3">6</option>
+                                                    <option value="3">7</option>
+                                                </select>
+                                            </div>
+
+                                            <div>
+                                                <label for="staticEmail2" class="">পোস্টাল কোড<span
+                                                        style="color: red;">*</span></label>
+                                                <input style="border: 2px solid #0c3899;"
+                                                    placeholder="পোস্টাল কোড লিখুন" type="text"
+                                                    class="form-control mb-3" required>
+                                            </div>
+                                            <button style="background: #0044a4;color: #fff;"
+                                                class="btn btn-md mt-3 ">যোগ
+                                                করুন</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Profile content End -->
+                        <!-- Village content -->
+                        <div class=" tab-pane fade" id="village">
+                            <!-- Village title area  -->
+                            <div class="title-bar">
+                                <h5>
+                                    <i class="fa-solid fa-bars-staggered me-3"></i>
+                                    <span>যোগকৃত গ্রাম</span>
+                                </h5>
+                            </div>
+
+                            <!-- Village content  -->
+                            <div class="paddingLeft20">
+                                <div class="mt-5  shadow rounded pt-4 px-3">
+                                    <h1 style="font-size: 25px; color: #0044a4; font-weight: bold;"
+                                        class="border-3 border-bottom pb-3">পূর্বের
+                                        যোগকৃত গ্রাম
+                                    </h1>
+                                    <div class="mt-4">
+                                        <table class="table village-table table-striped">
+                                            <thead style="font-size: 14px;" class="thead py-3">
+                                                <tr class="action">
+                                                    <th>স্ক্রল নং</th>
+                                                    <th>ওয়ার্ড</th>
+                                                    <th>গ্রাম</th>
+                                                    <th>ডাকঘর</th>
+                                                    <th>পোস্টাল কোড</th>
+                                                    <th>ACTION</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>1</td>
+                                                    <td>এনায়েতপুর</td>
+                                                    <td>এনায়েতপুর</td>
+                                                    <td>3821</td>
+                                                    <td>
+                                                        <a style="color: #0044a4; font-size: 15px; font-weight: bold;"
+                                                            href="#">Delete</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <td>1</td>
+                                                    <td>কুতুবপুর</td>
+                                                    <td>কুতুবপুর</td>
+                                                    <td>3821</td>
+                                                    <td>
+                                                        <a style="color: #0044a4; font-size: 15px; font-weight: bold;"
+                                                            href="#">Delete</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- village content End -->
+                        <!-- Recharge content -->
+                        <div class=" tab-pane fade" id="recharge" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">
+                            <!-- Recharge title area  -->
+                            <div class="title-bar">
+                                <h5>
+                                    <i class="fa-solid fa-receipt me-3"></i>
+                                    <span>রিচার্জ সমূহ</span>
+                                </h5>
+                            </div>
+
+                            <!-- Recharge content -->
+                            <div class="paddingLeft20">
+                                <div class="mt-4">
+                                    <h1 style="font-size: 25px; color: #0044a4; font-weight: bold;">পূর্বের লেনদেনের
+                                        তথ্যাবলি</h1>
+                                    <div class="mt-4 shadow-sm">
+                                        <table class="table  table-striped">
+                                            <thead style="font-size: 14px;" class="thead py-3">
+                                                <tr class="">
+                                                    <th>স্ক্রল নং</th>
+                                                    <th>তারিখ</th>
+                                                    <th>সর্বমোট লেনদেন</th>
+                                                    <th>বিস্তারিত</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>2022-12-28</td>
+                                                    <td>3</td>
+                                                    <td>
+                                                        <a style="color: #0044a4; font-size: 15px; font-weight: bold;"
+                                                            href="#">বিস্তারিত</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <td>2023-01-04</td>
+                                                    <td>2</td>
+                                                    <td>
+                                                        <a style="color: #0044a4; font-size: 15px; font-weight: bold;"
+                                                            href="#">বিস্তারিত</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Recharge content End -->
+                    </div>
+                </div>
+                <!-- End Right Site Area -->
+
+            </div>
+        </section>
+        <!-- End Full Site End -->
+
+        <script>
+            var menuLicks = document.getElementById("menuLicks");
+            var showIcon = document.getElementById("showIcon");
+            var hideIcon = document.getElementById("hideIcon");
+            function showMenu() {
+                menuLicks.style.transform = "scaleY(1)";
+                menuLicks.style.transition = ".9s";
+                menuLicks.style.transformOrigin = " top";
+                menuLicks.style.opacity = "1";
+
+                showIcon.style.display = 'none';
+                hideIcon.style.display = 'block';
+
+            }
+            function hideMenu() {
+                const x = window.matchMedia("(max-width: 991px)");
+                if (x.matches) {
+                    menuLicks.style.transform = "scaleY(0)";
+                    menuLicks.style.transformOrigin = " top";
+                    menuLicks.style.transition = "1s";
+                    menuLicks.style.opacity = "0";
+
+                    showIcon.style.display = 'block'
+                    hideIcon.style.display = 'none'
+                }
+
+            }
+
+            document.getElementById('new-apply-btn').addEventListener('click', function () {
+
+                const oldFormFiled = document.getElementById('replec-apply');
+                oldFormFiled.style.display = 'none';
+                const x = window.matchMedia("(max-width: 767px)")
+                if (x.matches) {
+                    const replecBtn = document.getElementById('old-apply-btn');
+                    replecBtn.style.display = 'none';
+                }
+
+                const newFormFiled = document.getElementById('new-apply-form');
+                newFormFiled.style.display = 'block'
+            })
+            document.getElementById('old-apply-btn').addEventListener('click', function () {
+                const newFormFiled = document.getElementById('new-apply-form');
+                newFormFiled.style.display = 'none';
+
+                const oldFormFiled = document.getElementById('replec-apply');
+                oldFormFiled.style.display = 'block';
+            })
+
+            // js for toggol icon show
+            const showToggol = document.getElementById('navbarToggleExternalContent');
+            if (x.matches) {
+                showToggol.classList.add('collapse')
+
+            }
+            else {
+                showToggol.classList.remove('collapse')
+            }
+
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+            integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+            crossorigin="anonymous"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>
